@@ -1,0 +1,38 @@
+{
+  "name": "rapydscript-ng",
+  "description": "Pythonic JavaScript that doesn't suck",
+  "homepage": "https://github.com/kovidgoyal/rapydscript-ng",
+  "keywords": [
+    "javascript",
+    "rapydscript",
+    "language",
+    "compiler"
+  ],
+  "main": "tools/compiler.js",
+  "scripts": {
+    "test": "node bin/rapydscript self --complete --test",
+    "start": "node bin/rapydscript",
+    "build-self": "node bin/rapydscript self --complete"
+  },
+  "version": "0.7.22",
+  "license": "BSD-2-Clause",
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "maintainers": [
+    {
+      "name": "Kovid Goyal",
+      "email": "kovid@kovidgoyal.net"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kovidgoyal/rapydscript-ng.git"
+  },
+  "optionalDependencies": {
+    "v8-profiler": ">= 5.2.9"
+  },
+  "bin": {
+    "rapydscript": "bin/rapydscript"
+  }
+}
